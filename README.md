@@ -14,7 +14,7 @@ Sleuth是一个加载框架，它允许开发者只需要require相应的库或�
    <script type="text/javascript" src="sleuth.js"></script>
 ```
 	
-先后引用mapping-ch.min.js,sleuth.js文件，注意顺序。mapping-ch.min.js是库的版本映射文件，定义了引用各个库和插件的源地址。默认的引用的是一个公共的映射文件，当然开发者也可以定义自己的映射文件。
+先后引用mapping-ch.min.js,sleuth.min.js文件，注意顺序。mapping-ch.min.js是库的版本映射文件，定义了引用各个库和插件的源地址。默认的引用的是一个公共的映射文件，当然开发者也可以定义自己的映射文件。
 
 #####2.使用方法
 
