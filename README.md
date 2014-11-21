@@ -146,7 +146,11 @@ Sleuth.js只向外提供了一个require方法
 
 ```
 
-如果想引用github中开源库的代码，需要注意的是其引用地址，比如Sleuth.js，https://github.com/AxeMea/Sleuth/blob/master/sleuth.js这个地址是不行的，需要的是直接访问文件系统的地址，https://rawgithub.com/axemea/sleuth/master/sleuth.js
+如果想引用github中开源库的代码，需要注意的是其引用地址，比如Sleuth.js,
+[Sleuth.js](https://github.com/AxeMea/Sleuth/blob/master/sleuth.js) 
+这个地址是不行的，需要的是直接访问文件系统的地址，
+[Sleuth.js](https://rawgithub.com/axemea/sleuth/master/sleuth.js)
+
 
 
 ####六.公共映射配置文件库以及插件列表[及时更新]
