@@ -151,9 +151,29 @@ Sleuth.js只向外提供了一个require方法
 这个地址是不行的，需要的是直接访问文件系统的地址，
 [Sleuth.js](https://rawgithub.com/axemea/sleuth/master/sleuth.js)
 
+####六.支持AMD,CommonJS规范
+
+#####AMD规范
+
+```javascript
+		
+		require(['sleuth'], function (Sleuth) {
+
+	　　　　Sleuth.require(['jquery|1.8.3','prototype','response'],function(){
+
+			//write your code 
+
+			});
+	　　});
+		
+```
+
+#####CommonJS规范
 
 
-####六.公共映射配置文件库以及插件列表[及时更新]
+
+
+####七.公共映射配置文件库以及插件列表[及时更新]
 
 
 库名 | 版本号 | 脚本引用地址 | 样式引用地址
