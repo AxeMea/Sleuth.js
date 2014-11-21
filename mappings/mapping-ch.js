@@ -7,11 +7,10 @@ var refMapping = {
 		'1.8.2':'http://code.jquery.com/jquery-1.8.2.min.js'
 	},
 	ext:{
-		'4.2.1':'http://cdn.bootcss.com/extjs/4.2.1/ext-all.min.js',
-		'css':'http://cdn.bootcss.com/extjs/4.2.1/resources/ext-theme-classic/ext-theme-classic-all.css'
-	},
-	backbone:{
-		'1.1.2':'http://cdn.bootcss.com/backbone.js/1.1.2/backbone-min.js'
+		'4.2.1':{
+			u:'http://cdn.bootcss.com/extjs/4.2.1/ext-all.min.js',
+			c:'http://cdn.bootcss.com/extjs/4.2.1/resources/ext-theme-classic/ext-theme-classic-all.css'
+		}
 	},
 	backbone:{
 		'1.1.2':'http://cdn.bootcss.com/backbone.js/1.1.2/backbone-min.js'
