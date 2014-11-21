@@ -128,6 +128,7 @@
 		    	if(version == '')	
 				    for(i in mapping){
 				    	scriptNode.src = typeof mapping[i] == 'string' ? mapping[i] : mapping[i].u;
+				    	version = i;
 				    	break;
 				    }
 			 	else{
@@ -153,7 +154,7 @@
 		    }
 
 		    // load css file,support one css file ,and more
-		    var mappingCSS = typeof mapping == 'string' ? mapping['css'] : mapping['css'].c,
+		    var mappingCSS = typeof mapping[version] == 'string' ? mapping[version] : mapping[version].c,
 		    	len;
 
 		    if(mappingCSS){
