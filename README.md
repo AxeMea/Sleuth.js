@@ -165,8 +165,6 @@ Sleuth.js只向外提供了一个require方法
 
 			});
 	　　});
-	
-
 ```
 
 
@@ -176,24 +174,20 @@ Sleuth.js只向外提供了一个require方法
 
 ```javascript
 		
-		
+　　　　Sleuth.requery|1.8.3','prototype','response'],function(){
 
-	　　　　Sleuth.require(['jquery|1.8.3','prototype','response'],function(){
+		require(['App_module_1','App_module_2','App_module_3'], function (module1,module2,module3) {
 
-				require(['App_module_1','App_module_2','App_module_3'], function (module1,module2,module3) {
-
-						//write your code
-
-					});
+				//write your code
 
 			});
-	　　
-	
+
+	});
+			
+```	
 
 
 #####CommonJS规范
-
-
 
 
 ####七.公共映射配置文件库以及插件列表[及时更新]
