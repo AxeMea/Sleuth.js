@@ -165,9 +165,14 @@ Sleuth.js只向外提供了一个require方法
 
 			});
 	　　});
-		
+	
+
 ```
+
+
 如果必须需要和require.js一起用时，我们推荐下面的用法，更能体现Sleuth.js和require.js的功能倾向
+
+
 
 ```javascript
 		
