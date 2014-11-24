@@ -174,7 +174,7 @@ Sleuth.js只向外提供了一个require方法
 
 ```javascript
 		
-　　　　Sleuth.requery|1.8.3','prototype','response'],function(){
+　　　　Sleuth.require(['jquery|1.8.3','prototype','response'],function(){
 
 		require(['App_module_1','App_module_2','App_module_3'], function (module1,module2,module3) {
 
