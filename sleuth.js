@@ -62,9 +62,8 @@
 			}
 
 
-
 			if(fn && typeof fn == 'function'){
-				if(!define.amd)
+				if(typeof define != "function" || !define.amd)
 					window.onload = function(){
 						fn();
 					};
