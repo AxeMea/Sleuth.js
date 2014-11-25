@@ -47,6 +47,32 @@
 				timeCounter = 0,
 				defaultTimeout = 5000;
 
+			// filter same alias
+			function _filterRepeat(aliass){
+
+				var len = aliass.length,
+					i,
+					hash = {},
+					newAliass = [];
+
+				for(i = 0 ; i < len;i++){
+
+					if(hash[aliass[i]])
+						continue;
+					else{
+						hash[aliass[i]] = true
+						hash[aliass[i] + '|'] = true
+
+						newAliass.push(aliass[i]);
+					}
+
+				}
+
+				return newAliass;
+			}
+
+			aliass = _filterRepeat(aliass);
+
 			if(  aliass instanceof Array){
 				var len = aliass.length;
 
@@ -134,10 +160,10 @@
 					 	if( mapping[version])
 					 		scriptNode.src = mapping[version];
 					 	else
-					 		console.error('Sleuth error:sorry,the version you wanna load is not in config file,you can pull request to our github,thx');
+					 		console.error('Sleuth error:sorry,' + module + '|' + version + ' is not in config file,you can pull request to our github,thx');
 					 }
 		    }else{
-		    	console.error('Sleuth error:sorry,the module you wanna load is not in config file,you can pull request to our github,thx');
+		    	console.error('Sleuth error:sorry,' + module + ' is not in config file,you can pull request to our github,thx');
 		    }
 
 
@@ -153,8 +179,10 @@
 		    }
 
 		    // load css file,support one css file ,and more
-		    var mappingCSS = typeof mapping[version] == 'string' ? mapping[version] : mapping[version].c,
-		    	len;
+		    var mappingCSS = '',len;
+
+		    if( version && mapping[version] && mapping[version].c)
+		    	mappingCSS = mapping[version].c;
 
 		    if(mappingCSS){
 		    	if(mappingCSS instanceof Array){
