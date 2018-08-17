@@ -1,13 +1,13 @@
 Sleuth.js
 ======
 
-####一.Sleuth.js是什么
+#### 一.Sleuth.js是什么
     
 Sleuth是一个加载框架，它允许开发者只需要require任意的库或者插件，无论是否符合AMD或CommonJS规范。不需要去下载，就可以直接使用，并且允许开发者任意切换版本。
 
 ####二.使用Sleuth.js
 
-#####1.引入Sleuth.js库文件
+##### 1.引入Sleuth.js库文件
 
 ```javascript
   <script type="text/javascript" src="https://rawgithub.com/axemea/sleuth/master/mappings/mapping-ch.min.js"></script>
@@ -16,7 +16,7 @@ Sleuth是一个加载框架，它允许开发者只需要require任意的库或�
 	
 先后引用mapping-ch.min.js,sleuth.min.js文件，注意顺序。mapping-ch.min.js是库的版本映射文件，定义了引用各个库和插件的源地址。默认的引用的是一个公共的映射文件，当然开发者也可以定义自己的映射文件。
 
-#####2.使用方法
+##### 2.使用方法
 
 Sleuth.js只向外提供了一个require方法
 
@@ -54,7 +54,7 @@ Sleuth.js只向外提供了一个require方法
 		});
 ```
 
-####三.定义版本映射文件
+#### 三.定义版本映射文件
 
 初始的映射文件为：
 
@@ -88,7 +88,7 @@ Sleuth.js只向外提供了一个require方法
 
 开发者如果需要其它的库或者插件可以Pull Request过来，我们将丰富到映射文件中去，当然开发者也可以编写自己的本地映射配置文件。但我们真诚的希望，您能将您的需求提交给我们，你需要的，必然他人也需要，谢谢。
 
-####四.映射配置文件配置项说明
+#### 四.映射配置文件配置项说明
 ```javascript
 
 		var refMapping = {
@@ -124,7 +124,7 @@ Sleuth.js只向外提供了一个require方法
 
 
 
-####五.关于引用地址
+#### 五.关于引用地址
 
 
 可以是各个cdn点的资源如：
@@ -151,9 +151,9 @@ Sleuth.js只向外提供了一个require方法
 这个地址是不行的，需要的是直接访问文件系统的地址，
 [Sleuth.js](https://rawgithub.com/axemea/sleuth/master/sleuth.js)
 
-####六.支持AMD,CommonJS规范
+#### 六.支持AMD,CommonJS规范
 
-#####AMD规范
+##### AMD规范
 
 ```javascript
 		
@@ -187,10 +187,10 @@ Sleuth.js只向外提供了一个require方法
 ```	
 
 
-#####CommonJS规范
+##### CommonJS规范
 
 
-####七.公共映射配置文件库以及插件列表[及时更新]
+#### 七.公共映射配置文件库以及插件列表[及时更新]
 
 
 库名 | 版本号 | 脚本引用地址 | 样式引用地址
